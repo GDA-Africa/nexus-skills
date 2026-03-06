@@ -1,0 +1,35 @@
+---
+skill: component-creation
+version: 1.0.0
+framework: next.js
+category: ui
+triggers:
+  - "creating a new component"
+  - "adding a React component"
+  - "building a UI element"
+author: "@nexus-framework/skills"
+status: active
+---
+
+# Skill: Creating Components (Next.js)
+
+## When to Read This
+Read before creating any new React component in this project.
+
+## Steps
+1. ...
+2. ...
+
+## Patterns We Use
+...
+
+## Anti-Patterns — Never Do This
+...
+
+## Example
+...
+```
+
+The `triggers` array is critical — it's how agents know *when* to reach for a skill, and it's how the CLI's `skill generate` command will match tasks to skills.
+
+---
