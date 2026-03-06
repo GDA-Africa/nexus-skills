@@ -1,0 +1,35 @@
+{
+  "name": "@nexus-framework/skills",
+  "version": "0.1.0",
+  "description": "Official NEXUS skills registry — AI task knowledge for every framework",
+  "main": "index.js",
+  "files": [
+    "next.js",
+    "react-vite", 
+    "sveltekit",
+    "nuxt",
+    "astro",
+    "remix",
+    "shared"
+  ],
+  "keywords": [
+    "nexus",
+    "ai",
+    "skills",
+    "scaffolding",
+    "agents",
+    "framework",
+    "development"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GDA-Africa/nexus-skills"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,16 @@
+# AI Instructions for this project
+
+> **Cursor:** The full AI agent instructions for this project live in
+> `.nexus/ai/instructions.md`. Read that file before doing anything.
+>
+> This file exists at the root because Cursor requires it here.
+> All configuration is centralized in the `.nexus/` folder to keep
+> the repository clean and beginner-friendly.
+
+Read `.nexus/ai/instructions.md` for:
+- Project identity and tech stack
+- Code rules and architecture constraints
+- NEXUS documentation system map
+- Implementation workflow
+
+Also read `.nexus/docs/01_vision.md` to understand what this project does.
