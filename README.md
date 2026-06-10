@@ -5,7 +5,14 @@
 
 [![npm version](https://img.shields.io/npm/v/@nexus-framework/skills.svg)](https://www.npmjs.com/package/@nexus-framework/skills)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE)
-[![Status: In Development](https://img.shields.io/badge/status-in%20development-orange.svg)]()
+[![Status: Live](https://img.shields.io/badge/status-live%20on%20npm-22c55e.svg)](https://www.npmjs.com/package/@nexus-framework/skills)
+
+> **New in v0.2.0 — the MCP era.** Three shared skills teach agents the NEXUS v1.0
+> Alive Brain workflow: [`nexus-mcp-usage`](packages/core/shared/nexus-mcp-usage.md)
+> (driving the `nexus-brain` MCP server), [`nexus-plans-workflow`](packages/core/shared/nexus-plans-workflow.md)
+> (durable multi-step plans), and [`brain-aware-ci`](packages/core/shared/brain-aware-ci.md)
+> (brief PR comments + doctor gates). In v1.0+ projects, agents discover and read
+> skills through MCP tools: `nexus_list_skills` → `nexus_get_skill`.
 
 ---
 
@@ -64,32 +71,21 @@ nexus-skills/
         state-management.md
         testing.md
         styling.md
-      sveltekit/
-        component-creation.md
-        routing.md
-        stores.md
-        testing.md
-      nuxt/
-        component-creation.md
-        routing.md
-        composables.md
-        testing.md
-      astro/
-        component-creation.md
-        content-collections.md
-        islands.md
-        routing.md
-      remix/
-        routing.md
-        loaders-actions.md
-        error-boundaries.md
-        testing.md
-      shared/
+        … (12 skills)
+      sveltekit/ nuxt/ astro/ remix/
+        component-creation.md     ← starter sets; parity expansion is backlog #2
+      go/ python/ rust/
+        component-creation.md     ← starter sets
+      shared/                     ← 20 framework-agnostic skills
+        nexus-mcp-usage.md        ← NEW v0.2.0
+        nexus-plans-workflow.md   ← NEW v0.2.0
+        brain-aware-ci.md         ← NEW v0.2.0
         git-workflow.md
         code-review.md
         debugging.md
         documentation.md
         knowledge-logging.md
+        … (testing-strategy, security, api-design, database-patterns, and more)
   SKILL_SPEC.md        ← canonical skill format standard (the contract for contributors)
   CONTRIBUTING.md      ← how to write and submit a skill to the registry
   skills-template      ← starter template for writing a new skill

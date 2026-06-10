@@ -1,48 +1,59 @@
-# @nexus-framework/skills Core Package
+<div align="center">
 
-This directory contains the core skills for the NEXUS Skills System, organized by framework and category.
+# @nexus-framework/skills
 
-## Structure
+**The official skill registry for the [NEXUS framework](https://www.npmjs.com/package/@nexus-framework/cli).**
+
+Pre-read instruction files that teach AI agents *how* to execute tasks in your project — patterns, conventions, anti-patterns, validation steps.
+
+[![npm](https://img.shields.io/npm/v/@nexus-framework/skills?style=flat-square&logo=npm&logoColor=white&label=npm&color=CB3837)](https://www.npmjs.com/package/@nexus-framework/skills)
+[![License](https://img.shields.io/badge/license-Apache_2.0-blue?style=flat-square)](LICENSE)
+
+</div>
+
+---
+
+## What skills are
+
+Generic AI agents know how to write code. They don't know how *your project* writes code. Skills close that gap: each skill is a markdown file with YAML frontmatter (`triggers`, `framework`, `category`) and a fixed section structure — When to Read This, Context, Steps, Patterns We Use, Anti-Patterns, Example, Validation.
+
+Agents match their current task against each skill's `triggers` before significant work, read the matching skill fully, and follow it. In NEXUS v1.0+ projects they do this through MCP tools (`nexus_list_skills` / `nexus_get_skill`) — see `shared/nexus-mcp-usage.md`.
+
+## Installation
+
+You usually don't install this package directly. The NEXUS CLI fetches it from npm:
+
+- `nexus init` / `nexus adopt` — copies framework-matched skills into `.nexus/skills/core/`
+- `nexus skill registry` — browses this package live (new skills appear without a CLI update)
+- `nexus skill install <pack>` — installs additional packs into `.nexus/skills/community/`
+
+Precedence in a project: `custom/` (yours, sacred) > `core/` (this package) > `community/`.
+
+## What's inside
 
 ```
-packages/core/
-├── next.js/          # Next.js framework skills
-├── react-vite/       # React + Vite framework skills
-├── sveltekit/        # SvelteKit framework skills
-├── nuxt/            # Nuxt framework skills
-├── astro/           # Astro framework skills
-├── remix/           # Remix framework skills
-├── shared/          # Framework-agnostic skills
-└── package.json     # Package configuration
+shared/        20 framework-agnostic skills
+next.js/        8 skills (components, routing, API routes, data fetching, …)
+react-vite/    12 skills
+sveltekit/ nuxt/ astro/ remix/   starter sets (parity expansion in progress)
+go/ python/ rust/                starter sets
 ```
 
-## Framework Skills
+### New in v0.2.0 — the MCP era
 
-Each framework directory contains skills specific to that framework's conventions and patterns:
+| Skill | Teaches agents to |
+|-------|-------------------|
+| `shared/nexus-mcp-usage.md` | Drive the `nexus-brain` MCP server: `nexus_wake` handshake, targeted knowledge queries, validated plan/knowledge writes |
+| `shared/nexus-plans-workflow.md` | Track multi-step work in durable `.nexus/plans/` files instead of conversation memory |
+| `shared/brain-aware-ci.md` | Maintain the deterministic CI layer: brief PR comments + doctor gates, no LLM dependency |
 
-### Next.js Skills
-- `component-creation.md` - How to create React components
-- `routing.md` - Route and page creation
-- `api-routes.md` - API endpoints and server actions
-- `data-fetching.md` - Server and client-side data fetching
-- `testing.md` - Testing patterns and utilities
-- `styling.md` - Styling conventions and best practices
-- `error-handling.md` - Error boundaries and error management
-- `middleware.md` - Request-level middleware
+### Shared skill highlights
 
-### Shared Skills
-- `nexus-mcp-usage.md` - **NEW v0.2.0** — Using the NEXUS brain MCP server (wake, plans, knowledge tools)
-- `nexus-plans-workflow.md` - **NEW v0.2.0** — Durable multi-step plans in .nexus/plans/
-- `brain-aware-ci.md` - **NEW v0.2.0** — Brief PR comments + doctor gates in CI
-- `git-workflow.md` - Git branching and commit conventions
-- `code-review.md` - Code review process and guidelines
-- `debugging.md` - Debugging strategies and tools
-- `documentation.md` - Documentation standards and practices
-- `knowledge-logging.md` - Project knowledge management
+`git-workflow` · `code-review` · `testing-strategy` · `debugging` · `documentation` · `knowledge-logging` · `security-best-practices` · `api-design` · `database-patterns` · `performance-optimization` · `accessibility` · `internationalization` · `deployment` · `dependency-management` · `monitoring-observability` · `skill-authoring`
 
-## Skill Format
+## Skill format
 
-All skills follow the NEXUS skill format standard defined in `SKILL_SPEC.md`:
+Defined in [`SKILL_SPEC.md`](https://github.com/GDA-Africa/nexus-skills/blob/main/SKILL_SPEC.md):
 
 ```yaml
 ---
@@ -58,19 +69,28 @@ status: active
 ---
 ```
 
-## Usage
+Honest triggers matter: agents match tasks against them, and vague triggers cause wrong skill reads.
 
-These skills are consumed by the NEXUS CLI and installed into projects via:
+## Programmatic API
 
-```bash
-nexus skill install next.js
-nexus skill install shared
+```js
+import { getSkillContent, listSkills, listFrameworks } from '@nexus-framework/skills';
+
+listFrameworks();                          // ['shared', 'next.js', 'react-vite', …]
+listSkills('shared');                      // ['git-workflow', 'nexus-mcp-usage', …]
+getSkillContent('shared', 'git-workflow'); // full markdown
 ```
+
+The registry is directory-driven — adding a `.md` file to a framework directory registers it. No manifest to maintain.
+
+## Versioning
+
+This package versions independently from the CLI. The CLI fetches `latest` at runtime, so publishing here ships skills to every NEXUS project immediately — old and new.
 
 ## Contributing
 
-See `CONTRIBUTING.md` for guidelines on adding new skills or updating existing ones.
+Write the skill against `SKILL_SPEC.md`, place it in the right framework directory, and open a PR at [GDA-Africa/nexus-skills](https://github.com/GDA-Africa/nexus-skills). `shared/skill-authoring.md` is the meta-skill for writing good skills.
 
 ## License
 
-Apache 2.0 - see LICENSE file for details.
+Apache 2.0 — built by [GDA Africa](https://gdaafrica.org).
