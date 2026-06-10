@@ -31,6 +31,9 @@ Each framework directory contains skills specific to that framework's convention
 - `middleware.md` - Request-level middleware
 
 ### Shared Skills
+- `nexus-mcp-usage.md` - **NEW v0.2.0** — Using the NEXUS brain MCP server (wake, plans, knowledge tools)
+- `nexus-plans-workflow.md` - **NEW v0.2.0** — Durable multi-step plans in .nexus/plans/
+- `brain-aware-ci.md` - **NEW v0.2.0** — Brief PR comments + doctor gates in CI
 - `git-workflow.md` - Git branching and commit conventions
 - `code-review.md` - Code review process and guidelines
 - `debugging.md` - Debugging strategies and tools
