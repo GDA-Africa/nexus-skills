@@ -7,6 +7,7 @@ triggers: ["update docs", "progress log", "knowledge entry", "session end", "bra
 tools:
   read: [nexus_wake, nexus_get_active_plan, nexus_list_plans, nexus_query_knowledge, nexus_doctor, nexus_brief]
   write: [nexus_plan_note, nexus_add_knowledge_entry]
+  exec: [Read, Edit, Write, Grep, Glob]
 context:
   docs: [index.md]
   knowledge_categories: [convention]

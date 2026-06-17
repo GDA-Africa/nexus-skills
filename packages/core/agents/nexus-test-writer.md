@@ -7,6 +7,7 @@ triggers: ["write tests", "test this", "coverage", "verify", "step complete"]
 tools:
   read: [nexus_wake, nexus_get_active_plan, nexus_query_knowledge, nexus_get_vital_signs, nexus_list_skills, nexus_get_skill]
   write: [nexus_plan_note, nexus_add_knowledge_entry]
+  exec: [Read, Edit, Write, Bash, Grep, Glob]
 context:
   docs: [06_test_strategy.md]
   knowledge_categories: [gotcha, pattern, convention]

@@ -7,6 +7,7 @@ triggers: ["implement", "build", "add feature", "fix bug", "refactor", "next ste
 tools:
   read: [nexus_wake, nexus_get_active_plan, nexus_query_knowledge, nexus_get_vital_signs, nexus_list_skills, nexus_get_skill, nexus_get_context]
   write: [nexus_plan_tick, nexus_plan_note]
+  exec: [Read, Edit, Write, Bash, Grep, Glob]
 context:
   docs: [02_architecture.md, 05_business_logic.md]
   knowledge_categories: [architecture, pattern, gotcha, convention]

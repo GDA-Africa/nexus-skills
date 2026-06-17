@@ -7,6 +7,7 @@ triggers: ["review", "check this", "pr", "pull request", "before merge"]
 tools:
   read: [nexus_wake, nexus_query_knowledge, nexus_get_vital_signs, nexus_doctor, nexus_brief, nexus_get_active_plan]
   write: []
+  exec: [Read, Grep, Glob, Bash]
 context:
   docs: [02_architecture.md]
   knowledge_categories: [convention, gotcha, architecture, bug-fix]
