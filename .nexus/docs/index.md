@@ -80,3 +80,19 @@ Three new shared skills teach agents the v1.0 Alive Brain + MCP workflow:
 2. `index.js` is directory-driven — never maintain a manual skill list
 3. nexus-cli fetches this package live from npm — publishing is the only deploy step
 4. Keep triggers honest: agents match tasks against them; vague triggers cause wrong skill reads
+
+---
+
+<!-- NEXUS:VITAL_SIGNS:START — managed by `nexus sync` -->
+## 🩺 Vital Signs (auto)
+
+_Last sync: not yet synced_
+
+| Sensor | Reading |
+|--------|---------|
+| Last commit | not available |
+| Tests | not yet measured |
+| Coverage | not collected · M1 sensor adds `vitest --coverage` parsing |
+| Stale folders | not measured |
+| Packages | not yet measured |
+<!-- NEXUS:VITAL_SIGNS:END -->

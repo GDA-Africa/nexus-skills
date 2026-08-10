@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "nexus-brain": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@nexus-framework/cli",
+        "mcp"
+      ]
+    }
+  }
+}

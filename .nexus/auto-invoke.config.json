@@ -1,0 +1,12 @@
+{
+  "enabled": true,
+  "mode": "silent",
+  "sync_interval_minutes": 60,
+  "auto_fix_doctor": false,
+  "disabled_for_commands": [
+    "help"
+  ],
+  "always_prompt_for": [
+    "plan"
+  ]
+}

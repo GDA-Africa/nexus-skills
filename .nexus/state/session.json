@@ -1,0 +1,14 @@
+{
+  "$schema": "https://nexus-framework.dev/schemas/session.json",
+  "token": null,
+  "issued_at": null,
+  "brain_hash": null,
+  "brain_hash_inputs": [
+    "docs/index.md",
+    "docs/knowledge.md",
+    "plans/_active.json"
+  ],
+  "active_plan": null,
+  "issued_by": "nexus scaffold",
+  "note": "Run `nexus wake` to issue the first handshake token."
+}
