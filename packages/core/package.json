@@ -1,6 +1,6 @@
 {
   "name": "@nexus-framework/skills",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Official NEXUS skills registry \u2014 AI task knowledge for every framework",
   "main": "index.js",
   "files": [

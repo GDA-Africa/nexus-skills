@@ -2,7 +2,7 @@
 skill: mapbox-integration
 version: 1.0.0
 framework: shared
-category: maps
+category: integration
 triggers:
   - "mapbox"
   - "map integration"
