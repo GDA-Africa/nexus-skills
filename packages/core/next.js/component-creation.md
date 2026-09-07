@@ -1,16 +1,17 @@
 ---
 skill: component-creation
-version: 1.0.0
+version: 1.0.1
 framework: next.js
 category: ui
 triggers:
-  - "creating a new component"
-  - "adding a React component"
-  - "building a UI element"
-  - "new component"
-  - "add a page component"
-author: "@nexus-framework/skills"
+- creating a new component
+- adding a React component
+- building a UI element
+- new component
+- add a page component
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: Creating Components (Next.js)
@@ -19,7 +20,7 @@ status: active
 Read this skill before creating any new React component in this project.
 
 ## Context
-This project uses a feature-based folder structure where components live alongside their feature module, not in a global `components/` directory. All components are server components by default; add `'use client'` only when you need browser APIs or interactivity. Components follow a consistent naming pattern and export structure to maintain type safety and predictability.
+This project uses a feature-based folder structure where components live alongside their feature module, not in a global `components/` directory. All components are React Server Components (RSC) by default; add `"use client"` only when you need browser APIs, event listeners, or interactivity (e.g., hooks like `useState`).
 
 ## Steps
 1. Determine whether the component is server or client (default: server).
@@ -32,10 +33,10 @@ This project uses a feature-based folder structure where components live alongsi
 ## Patterns We Use
 - File names: PascalCase (`UserCard.tsx`, `ProductList.tsx`)
 - Props interfaces: Named `[ComponentName]Props` defined above the component
+- Server Components First: Avoid `"use client"` unless specifically needed for interactivity.
 - Imports: Absolute paths using the `@/` alias for `src/`
-- Exports: Named exports only — never `export default`
-- Server components: Default unless browser APIs or interactivity required
-- Styling: Tailwind CSS classes only, no inline styles or CSS modules
+- Exports: Named exports only — never `export default` (except for Next.js special files like `page.tsx` and `layout.tsx`).
+- Styling: Tailwind CSS classes only.
 
 ## Anti-Patterns — Never Do This
 - ❌ Do not create components in `src/components/` — use the feature folder

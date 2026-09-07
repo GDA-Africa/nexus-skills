@@ -1,16 +1,17 @@
 ---
 skill: nexus-agent-authoring
-version: 1.0.0
+version: 1.0.1
 framework: shared
 category: workflow
 triggers:
-  - "create agent"
-  - "custom agent"
-  - "agent definition"
-  - "nexus agent new"
-  - "subagent"
-author: "@nexus-framework/skills"
+- create agent
+- custom agent
+- agent definition
+- nexus agent new
+- subagent
+author: '@nexus-framework/skills'
 status: active
+invocation: user
 ---
 
 # Skill: Authoring NEXUS Agents (Shared)

@@ -1,17 +1,18 @@
 ---
 skill: nexus-plans-workflow
-version: 1.0.0
+version: 1.0.1
 framework: shared
-category: workflow
+category: procedure
 triggers:
-  - "plan"
-  - "multi-step"
-  - "task tracking"
-  - "nexus plan"
-  - "roadmap"
-  - "milestone"
-author: "@nexus-framework/skills"
+- plan
+- multi-step
+- task tracking
+- nexus plan
+- roadmap
+- milestone
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: NEXUS Plans Workflow (Shared)
@@ -41,6 +42,11 @@ Plans are the NEXUS unit of multi-step work: durable markdown files in `.nexus/p
 - ❌ Do not hold multi-step plans only in conversation context — sessions end, plans persist
 - ❌ Do not mark a plan done with unchecked acceptance criteria — tick them or note why they were dropped
 - ❌ Do not hand-edit frontmatter status — use the lifecycle commands/tools so transitions are validated
+
+## Completion Criteria
+Done when the procedure has been fully executed and its output generated.
+
+Not done when steps are skipped or outputs are partial.
 
 ## Example
 

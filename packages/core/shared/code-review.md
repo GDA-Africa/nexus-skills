@@ -1,16 +1,23 @@
 ---
 skill: code-review
-version: 1.0.0
+version: 1.0.1
 framework: shared
-category: workflow
+category: procedure
 triggers:
-  - "code review"
-  - "reviewing code"
-  - "pull request review"
-  - "review feedback"
-  - "review comments"
-author: "@nexus-framework/skills"
+- code review
+- reviewing code
+- pull request review
+- review feedback
+- review comments
+author: '@nexus-framework/skills'
 status: active
+invocation: model
+gate:
+  plan_types:
+  - feature
+  - bug
+  - refactor
+  record: '## Review Notes'
 ---
 
 # Skill: Code Review (Shared)
@@ -44,6 +51,11 @@ Code review is a critical quality gate that ensures code correctness, maintainab
 - ❌ Do not ignore test coverage requirements
 - ❌ Do not leave vague comments like "fix this"
 - ❌ Do not block reviews over trivial preferences
+
+## Completion Criteria
+Done when the procedure has been fully executed and its output generated.
+
+Not done when steps are skipped or outputs are partial.
 
 ## Example
 

@@ -1,16 +1,17 @@
 ---
 skill: debugging
-version: 1.0.0
+version: 1.0.1
 framework: shared
 category: workflow
 triggers:
-  - "debugging"
-  - "debug issue"
-  - "troubleshooting"
-  - "bug fix"
-  - "error investigation"
-author: "@nexus-framework/skills"
+- debugging
+- debug issue
+- troubleshooting
+- bug fix
+- error investigation
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: Debugging (Shared)
@@ -19,7 +20,7 @@ status: active
 Read this skill when investigating bugs, errors, or unexpected behavior in the codebase.
 
 ## Context
-Effective debugging requires a systematic approach to isolate, reproduce, and fix issues. This project emphasizes understanding the root cause rather than applying quick fixes. Use debugging tools, logging, and systematic investigation to identify issues. Document findings to prevent similar problems in the future.
+Effective debugging in this project relies on a structured approach rather than haphazard console logs. We prioritize understanding the root cause by reading error traces, reproducing the bug reliably, and leveraging debugging tools (e.g., VS Code debugger, Chrome DevTools) and observability platforms.
 
 ## Steps
 1. Reproduce the issue consistently in a development environment
@@ -41,12 +42,10 @@ Effective debugging requires a systematic approach to isolate, reproduce, and fi
 - Use feature flags to isolate problematic code sections
 
 ## Anti-Patterns — Never Do This
-- ❌ Do not make random changes hoping to fix the issue
-- ❌ Do not ignore error messages or assume they're unrelated
-- ❌ Do not fix symptoms without understanding the root cause
-- ❌ Do not skip writing tests for the bug fix
-- ❌ Do not commit debugging code (console.log, debugger statements)
-- ❌ Do not assume the issue is in external dependencies without investigation
+- ❌ Do not guess and change code without understanding why it is broken.
+- ❌ Do not leave `console.log` or `debugger` statements in production code.
+- ❌ Do not ignore warnings in the build or console logs.
+- ❌ Do not attempt to fix a bug without first reproducing it locally.
 
 ## Example
 

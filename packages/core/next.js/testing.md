@@ -1,16 +1,17 @@
 ---
 skill: testing
-version: 1.0.0
+version: 1.0.1
 framework: next.js
 category: testing
 triggers:
-  - "writing tests"
-  - "adding tests"
-  - "test file"
-  - "Jest"
-  - "React Testing Library"
-author: "@nexus-framework/skills"
+- writing tests
+- adding tests
+- test file
+- Jest
+- React Testing Library
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: Testing (Next.js)

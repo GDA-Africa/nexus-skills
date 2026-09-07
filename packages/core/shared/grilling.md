@@ -1,30 +1,30 @@
 ---
 skill: grilling
-version: 1.0.0
+version: 1.0.1
 framework: shared
 category: procedure
-invocation: model
+invocation: user
 gate:
   plan_types:
-    - feature
-    - refactor
-    - spike
-  record: "## Grilling"
+  - feature
+  - refactor
+  - spike
+  record: '## Grilling'
 triggers:
-  - "new feature"
-  - "grill"
-  - "major fix"
-  - "refactor"
-  - "redesign"
-  - "rewrite"
-  - "not sure"
-  - "complex"
-author: "@nexus-framework/skills"
+- new feature
+- grill
+- major fix
+- refactor
+- redesign
+- rewrite
+- not sure
+- complex
+author: '@nexus-framework/skills'
 status: draft
 updated: 2026-08-21
 related:
-  - nexus-plans-workflow
-  - knowledge-logging
+- nexus-plans-workflow
+- knowledge-logging
 ---
 
 # Skill: Grilling (Shared)
@@ -70,6 +70,11 @@ Grilling is the primitive. Other procedures invoke it; it invokes nothing.
 Grilling is done when **every branch you mapped in step 3 is either decided or explicitly recorded as out of scope**, and the human has confirmed the one-sentence restatement of the ask.
 
 Not done when: any branch is still "we'll figure that out when we get there", the acceptance criteria could be read two ways, or you could not explain to a fresh agent why a rejected alternative was rejected.
+
+## Completion Criteria
+Done when the procedure has been fully executed and its output generated.
+
+Not done when steps are skipped or outputs are partial.
 
 ## Example
 

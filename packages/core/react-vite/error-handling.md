@@ -1,16 +1,17 @@
 ---
 skill: error-handling
-version: 1.0.0
+version: 1.0.1
 framework: react-vite
 category: workflow
 triggers:
-  - "error handling"
-  - "error boundaries"
-  - "error management"
-  - "React errors"
-  - "error recovery"
-author: "@nexus-framework/skills"
+- error handling
+- error boundaries
+- error management
+- React errors
+- error recovery
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: Error Handling (React + Vite)

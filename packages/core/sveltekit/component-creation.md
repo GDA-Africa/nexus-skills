@@ -1,15 +1,16 @@
 ---
 skill: component-creation
-version: 1.0.0
+version: 1.0.1
 framework: sveltekit
 category: ui
 triggers:
-  - "component creation"
-  - "Svelte components"
-  - "Svelte patterns"
-  - "component architecture"
-author: "@nexus-framework/skills"
+- component creation
+- Svelte components
+- Svelte patterns
+- component architecture
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: Component Creation (SvelteKit)

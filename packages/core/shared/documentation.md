@@ -1,16 +1,17 @@
 ---
 skill: documentation
-version: 1.0.0
+version: 1.0.1
 framework: shared
 category: workflow
 triggers:
-  - "documentation"
-  - "writing docs"
-  - "API documentation"
-  - "code comments"
-  - "README"
-author: "@nexus-framework/skills"
+- documentation
+- writing docs
+- API documentation
+- code comments
+- README
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: Documentation (Shared)

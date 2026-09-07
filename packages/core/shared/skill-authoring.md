@@ -1,26 +1,27 @@
 ---
 skill: skill-authoring
-version: 1.0.0
+version: 1.0.1
 framework: shared
-category: workflow
+category: procedure
 triggers:
-  - "add a new skill"
-  - "create a skill"
-  - "write a skill"
-  - "new skill file"
-  - "skill authoring"
-  - "skill creation"
-  - "add skill to nexus"
-  - "contribute a skill"
-  - "write a nexus skill"
-  - "skill for"
-author: "@nexus-framework/skills"
+- add a new skill
+- create a skill
+- write a skill
+- new skill file
+- skill authoring
+- skill creation
+- add skill to nexus
+- contribute a skill
+- write a nexus skill
+- skill for
+author: '@nexus-framework/skills'
 status: active
 updated: 2026-03-07
 related:
-  - knowledge-logging
-  - documentation
-  - code-review
+- knowledge-logging
+- documentation
+- code-review
+invocation: model
 ---
 
 # Skill: Skill Authoring (Shared)
@@ -115,6 +116,11 @@ These are distilled from Anthropic's Claude prompt engineering guidelines, OpenA
 
 ---
 
+## Completion Criteria
+Done when the procedure has been fully executed and its output generated.
+
+Not done when steps are skipped or outputs are partial.
+
 ## Example
 
 ### Complete minimal valid skill file
@@ -167,6 +173,11 @@ This project uses a centralized error handling approach: all async errors flow t
 - ❌ Do not `console.error` in production code — use `handleError()`
 - ❌ Do not pass raw `Error` objects to components — convert via `handleError()` first
 - ❌ Do not silently swallow errors — every catch block must call `handleError()`
+
+## Completion Criteria
+Done when the procedure has been fully executed and its output generated.
+
+Not done when steps are skipped or outputs are partial.
 
 ## Example
 

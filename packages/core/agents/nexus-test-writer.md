@@ -1,21 +1,47 @@
 ---
 nexus_agent: true
 agent: nexus-test-writer
-version: 1.0.0
+version: 1.0.1
 role: verification
-triggers: ["write tests", "test this", "coverage", "verify", "step complete"]
+triggers:
+- write tests
+- test this
+- coverage
+- verify
+- step complete
 tools:
-  read: [nexus_wake, nexus_get_active_plan, nexus_query_knowledge, nexus_get_vital_signs, nexus_list_skills, nexus_get_skill]
-  write: [nexus_plan_note, nexus_add_knowledge_entry]
-  exec: [Read, Edit, Write, Bash, Grep, Glob]
+  read:
+  - nexus_wake
+  - nexus_get_active_plan
+  - nexus_query_knowledge
+  - nexus_get_vital_signs
+  - nexus_list_skills
+  - nexus_get_skill
+  write:
+  - nexus_plan_note
+  - nexus_add_knowledge_entry
+  exec:
+  - Read
+  - Edit
+  - Write
+  - Bash
+  - Grep
+  - Glob
 context:
-  docs: [06_test_strategy.md]
-  knowledge_categories: [gotcha, pattern, convention]
-  skills: ["testing-strategy", "shared/testing"]
+  docs:
+  - 06_test_strategy.md
+  knowledge_categories:
+  - gotcha
+  - pattern
+  - convention
+  skills:
+  - testing-strategy
+  - shared/testing
   plan_scope: active
 handoff:
   after: nexus-implementer
 status: active
+invocation: model
 ---
 
 # Agent: nexus-test-writer

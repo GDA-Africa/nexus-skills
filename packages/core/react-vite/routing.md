@@ -1,16 +1,17 @@
 ---
 skill: routing
-version: 1.0.0
+version: 1.0.1
 framework: react-vite
 category: workflow
 triggers:
-  - "routing"
-  - "React Router"
-  - "navigation"
-  - "URL parameters"
-  - "route guards"
-author: "@nexus-framework/skills"
+- routing
+- React Router
+- navigation
+- URL parameters
+- route guards
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: Routing (React + Vite)
@@ -19,7 +20,7 @@ status: active
 Read this skill when implementing navigation, URL routing, or page transitions in a React + Vite application.
 
 ## Context
-This project uses React Router v6 for client-side routing with a structured approach to route organization, lazy loading, and route protection. We follow a file-based routing pattern where possible and implement proper error boundaries, loading states, and SEO considerations. Route guards and authentication checks are implemented consistently across protected routes.
+We use React Router DOM (v6+) for our React-Vite applications. We leverage the data router features (`createBrowserRouter`) which allows for loader and action functions alongside routes. All routing is configured in a central `src/routes.tsx` or similar file to maintain an overview of the application structure.
 
 ## Steps
 1. Set up React Router with proper configuration
@@ -32,14 +33,10 @@ This project uses React Router v6 for client-side routing with a structured appr
 8. Set up route-based code splitting
 
 ## Patterns We Use
-- React Router v6: Use latest version with modern patterns
-- Lazy loading: Use React.lazy and Suspense for route components
-- Route guards: Implement authentication and authorization checks
-- Nested routes: Use for layout composition and shared navigation
-- URL parameters: Use proper parameter naming and validation
-- Error boundaries: Wrap routes with error handling
-- Loading states: Show appropriate loading indicators
-- SEO: Implement proper meta tags and structured data
+- Data Router: Prefer `createBrowserRouter` over `<BrowserRouter>` for access to loaders, actions, and advanced navigation features.
+- Loaders: Colocate data loading logic with the route definition to fetch data before the component renders.
+- Error Elements: Define `errorElement` boundaries at logical points (e.g., top level, feature level) to catch routing or loading errors gracefully.
+- Absolute paths: Use Vite aliases (`@/`) for clean imports.
 
 ## Anti-Patterns — Never Do This
 - ❌ Do not use class components for route components

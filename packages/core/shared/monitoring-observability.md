@@ -1,16 +1,17 @@
 ---
 skill: monitoring-observability
-version: 1.0.0
+version: 1.0.1
 framework: shared
 category: workflow
 triggers:
-  - "monitoring"
-  - "observability"
-  - "logging"
-  - "metrics"
-  - "alerting"
-author: "@nexus-framework/skills"
+- monitoring
+- observability
+- logging
+- metrics
+- alerting
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: Monitoring and Observability (Shared)
