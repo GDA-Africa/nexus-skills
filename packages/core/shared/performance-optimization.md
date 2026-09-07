@@ -1,16 +1,17 @@
 ---
 skill: performance-optimization
-version: 1.0.0
+version: 1.0.1
 framework: shared
 category: workflow
 triggers:
-  - "performance optimization"
-  - "performance patterns"
-  - "caching"
-  - "optimization strategies"
-  - "slow application"
-author: "@nexus-framework/skills"
+- performance optimization
+- performance patterns
+- caching
+- optimization strategies
+- slow application
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: Performance Optimization (Shared)

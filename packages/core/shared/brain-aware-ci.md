@@ -1,17 +1,18 @@
 ---
 skill: brain-aware-ci
-version: 1.0.0
+version: 1.0.1
 framework: shared
 category: workflow
 triggers:
-  - "ci"
-  - "continuous integration"
-  - "github actions"
-  - "pull request"
-  - "pr comment"
-  - "doctor gate"
-author: "@nexus-framework/skills"
+- ci
+- continuous integration
+- github actions
+- pull request
+- pr comment
+- doctor gate
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: Brain-Aware CI (Shared)
@@ -20,7 +21,7 @@ status: active
 Read this skill before modifying CI workflows in a NEXUS project, or when asked to surface brain state (briefs, drift, plans) in pull requests.
 
 ## Context
-NEXUS projects ship a deterministic brain-aware CI layer: the generated GitHub Actions workflow runs `nexus sync` + `nexus brief --md` on pull requests and posts the digest as a sticky PR comment, and runs `nexus doctor` as a drift gate. Reviewers see brain state — vital signs, active plans, drift findings, recently shipped work — next to the diff. Everything is deterministic markdown; there is no LLM dependency in this tier.
+This project enforces a strict, deterministic CI layer. We believe CI should be fast, reliable, and not dependent on non-deterministic processes (like LLMs). We utilize the `brain-aware-ci` workflow to run fast doctor checks (e.g., `nexus doctor`) and maintain concise PR comments that explicitly state if a change is safe to merge without human review, gating merges behind strict rules.
 
 ## Steps
 1. Keep the `brain` job from the generated `.github/workflows/ci.yml` intact when editing CI — it needs `pull-requests: write` permission and the sticky-comment marker `<!-- nexus-brain-brief -->`.
@@ -30,9 +31,9 @@ NEXUS projects ship a deterministic brain-aware CI layer: the generated GitHub A
 5. Commit messages referencing a plan id (e.g. `feat: add auth (plan: add-user-authentication)`) make the brief's "shipped" section traceable back to plans.
 
 ## Patterns We Use
-- Sticky comment (update-in-place) — one brief per PR, never a comment per push.
-- `|| true` on the sync/brief steps — a missing or uncommitted `.nexus/` must not fail unrelated CI.
-- Deterministic tier in v1.0; LLM-assisted commit drafting and review cross-referencing are a future opt-in layer, not CI defaults.
+- CI gates: All merges must pass `nexus doctor` checks.
+- PR comments: Brief and actionable. Avoid long explanations; focus on whether the change breaks rules or needs human review.
+- No LLM dependency in CI: The CI environment uses only pre-compiled tools or fast deterministic scripts.
 
 ## Anti-Patterns — Never Do This
 - ❌ Do not let the brain job block merges — it informs reviewers; only the doctor error gate blocks

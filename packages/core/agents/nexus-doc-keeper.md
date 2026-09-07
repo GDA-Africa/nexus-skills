@@ -1,21 +1,44 @@
 ---
 nexus_agent: true
 agent: nexus-doc-keeper
-version: 1.0.0
+version: 1.0.1
 role: hygiene
-triggers: ["update docs", "progress log", "knowledge entry", "session end", "brain hygiene"]
+triggers:
+- update docs
+- progress log
+- knowledge entry
+- session end
+- brain hygiene
 tools:
-  read: [nexus_wake, nexus_get_active_plan, nexus_list_plans, nexus_query_knowledge, nexus_doctor, nexus_brief]
-  write: [nexus_plan_note, nexus_add_knowledge_entry]
-  exec: [Read, Edit, Write, Grep, Glob]
+  read:
+  - nexus_wake
+  - nexus_get_active_plan
+  - nexus_list_plans
+  - nexus_query_knowledge
+  - nexus_doctor
+  - nexus_brief
+  write:
+  - nexus_plan_note
+  - nexus_add_knowledge_entry
+  exec:
+  - Read
+  - Edit
+  - Write
+  - Grep
+  - Glob
 context:
-  docs: [index.md]
-  knowledge_categories: [convention]
-  skills: ["knowledge-logging", "documentation"]
+  docs:
+  - index.md
+  knowledge_categories:
+  - convention
+  skills:
+  - knowledge-logging
+  - documentation
   plan_scope: all
 handoff:
   after: nexus-reviewer
 status: active
+invocation: model
 ---
 
 # Agent: nexus-doc-keeper

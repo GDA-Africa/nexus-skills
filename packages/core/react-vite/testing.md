@@ -1,16 +1,17 @@
 ---
 skill: testing
-version: 1.0.0
+version: 1.0.1
 framework: react-vite
 category: workflow
 triggers:
-  - "testing"
-  - "unit testing"
-  - "integration testing"
-  - "e2e testing"
-  - "test strategy"
-author: "@nexus-framework/skills"
+- testing
+- unit testing
+- integration testing
+- e2e testing
+- test strategy
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: Testing Strategy (React + Vite)

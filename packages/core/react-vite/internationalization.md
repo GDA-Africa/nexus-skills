@@ -1,16 +1,17 @@
 ---
 skill: internationalization
-version: 1.0.0
+version: 1.0.1
 framework: react-vite
 category: workflow
 triggers:
-  - "internationalization"
-  - "i18n"
-  - "localization"
-  - "l10n"
-  - "multi-language"
-author: "@nexus-framework/skills"
+- internationalization
+- i18n
+- localization
+- l10n
+- multi-language
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: Internationalization (React + Vite)

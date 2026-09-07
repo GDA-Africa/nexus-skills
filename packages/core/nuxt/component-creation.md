@@ -1,15 +1,16 @@
 ---
 skill: component-creation
-version: 1.0.0
+version: 1.0.1
 framework: nuxt
 category: ui
 triggers:
-  - "component creation"
-  - "Vue components"
-  - "Nuxt components"
-  - "component architecture"
-author: "@nexus-framework/skills"
+- component creation
+- Vue components
+- Nuxt components
+- component architecture
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: Component Creation (Nuxt)

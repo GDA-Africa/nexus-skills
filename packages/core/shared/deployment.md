@@ -1,16 +1,17 @@
 ---
 skill: deployment
-version: 1.0.0
+version: 1.0.1
 framework: shared
 category: workflow
 triggers:
-  - "deployment"
-  - "CI/CD"
-  - "environment management"
-  - "deployment strategies"
-  - "production deployment"
-author: "@nexus-framework/skills"
+- deployment
+- CI/CD
+- environment management
+- deployment strategies
+- production deployment
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: Deployment (Shared)

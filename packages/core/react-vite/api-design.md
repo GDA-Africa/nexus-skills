@@ -1,16 +1,17 @@
 ---
 skill: api-design
-version: 1.0.0
+version: 1.0.1
 framework: react-vite
 category: api
 triggers:
-  - "API design"
-  - "REST API"
-  - "GraphQL"
-  - "API conventions"
-  - "API documentation"
-author: "@nexus-framework/skills"
+- API design
+- REST API
+- GraphQL
+- API conventions
+- API documentation
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: API Design (React + Vite)

@@ -1,16 +1,17 @@
 ---
 skill: testing-strategy
-version: 1.0.0
+version: 1.0.1
 framework: shared
 category: testing
 triggers:
-  - "testing strategy"
-  - "testing pyramid"
-  - "unit tests"
-  - "integration tests"
-  - "E2E tests"
-author: "@nexus-framework/skills"
+- testing strategy
+- testing pyramid
+- unit tests
+- integration tests
+- E2E tests
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: Testing Strategy (Shared)
@@ -32,14 +33,11 @@ This project follows a testing pyramid approach with different levels of testing
 8. Update tests when requirements or implementation changes
 
 ## Patterns We Use
-- Testing pyramid: Many unit tests, fewer integration tests, minimal E2E tests
-- Test frameworks: Jest, Vitest, or framework-specific testing libraries
-- Mocking: Jest.mock(), MSW (Mock Service Worker) for API mocking
-- Test utilities: React Testing Library, Testing Library for other frameworks
-- Setup/teardown: beforeEach, afterEach, beforeAll, afterAll for test isolation
-- Test data: Factories, fixtures, or test builders for consistent test data
-- Coverage: Aim for 80%+ coverage on critical business logic
-- Parallel execution: Run tests in parallel for faster feedback
+- TDD (Test Driven Development): Write failing tests before the code.
+- Unit tests: Focus on small, isolated logic. Mock external dependencies aggressively.
+- Integration tests: Verify that different units work together, particularly around data access and API boundaries.
+- E2E Tests (e.g., Playwright/Cypress): Test critical user journeys across the entire stack.
+- Colocation: Place tests next to the files they test (e.g., `feature.test.ts` next to `feature.ts`).
 
 ## Anti-Patterns — Never Do This
 - ❌ Do not write tests that are too broad or too specific
