@@ -20,7 +20,7 @@ triggers:
   - "not sure"
   - "complex"
 author: "@nexus-framework/skills"
-status: draft
+status: active
 updated: 2026-08-21
 related:
   - nexus-plans-workflow

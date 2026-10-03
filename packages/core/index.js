@@ -52,15 +52,20 @@ export function listSkills(framework) {
     .map((f) => f.replace('.md', ''));
 }
 
-/**
- * List all frameworks that have skills available.
- *
- * @returns {string[]}
- */
 export function listFrameworks() {
   return fs
     .readdirSync(__dirname)
     .filter((f) => fs.statSync(path.join(__dirname, f)).isDirectory());
 }
 
-export default { getSkillPath, getSkillContent, listSkills, listFrameworks };
+/**
+ * Get directory path for skills (either root or specific framework).
+ *
+ * @param {string} [framework] - optional subfolder (e.g. 'shared', 'next.js')
+ * @returns {string}
+ */
+export function getSkillsDir(framework) {
+  return framework ? path.join(__dirname, framework) : __dirname;
+}
+
+export default { getSkillPath, getSkillContent, listSkills, listFrameworks, getSkillsDir };
