@@ -32,24 +32,27 @@ Precedence in a project: `custom/` (yours, sacred) > `core/` (this package) > `c
 ## What's inside
 
 ```
-shared/        20 framework-agnostic skills
+shared/        27 framework-agnostic skills
 next.js/        8 skills (components, routing, API routes, data fetching, …)
 react-vite/    12 skills
 sveltekit/ nuxt/ astro/ remix/   starter sets (parity expansion in progress)
-go/ python/ rust/                starter sets
+go/ python/ rust/                production sets (API design, testing, components)
 ```
 
-### New in v0.2.0 — the MCP era
+### New in v0.4.0 — Production Architecture & Backend Packs
 
 | Skill | Teaches agents to |
 |-------|-------------------|
-| `shared/nexus-mcp-usage.md` | Drive the `nexus-brain` MCP server: `nexus_wake` handshake, targeted knowledge queries, validated plan/knowledge writes |
-| `shared/nexus-plans-workflow.md` | Track multi-step work in durable `.nexus/plans/` files instead of conversation memory |
-| `shared/brain-aware-ci.md` | Maintain the deterministic CI layer: brief PR comments + doctor gates, no LLM dependency |
+| `shared/ai-integration.md` | Model selection, token budgets, prompt injection guards, Zod structured outputs, SSE streaming |
+| `shared/authentication-patterns.md` | HttpOnly cookie sessions, short-lived JWTs, rotatable hashed refresh tokens, Argon2id/bcrypt, CSRF, RBAC |
+| `shared/data-migrations-resilience.md` | Expand-and-contract zero-downtime migrations, `CREATE INDEX CONCURRENTLY`, non-blocking DDL, cursor batching |
+| `shared/state-machines-workflows.md` | Finite state machines, transition matrices, `Idempotency-Key` deduplication, Saga compensating transactions |
+| `shared/docker-containerization.md` | Multi-stage Docker builds, non-root execution (`USER appuser`), layer caching hygiene, signal forwarding |
+| `python/` · `go/` · `rust/` | Production-grade `api-design.md` and `testing.md` packs for high-concurrency microservices |
 
 ### Shared skill highlights
 
-`git-workflow` · `code-review` · `testing-strategy` · `debugging` · `documentation` · `knowledge-logging` · `security-best-practices` · `api-design` · `database-patterns` · `performance-optimization` · `accessibility` · `internationalization` · `deployment` · `dependency-management` · `monitoring-observability` · `skill-authoring`
+`git-workflow` · `code-review` · `testing-strategy` · `debugging` · `documentation` · `knowledge-logging` · `security-best-practices` · `api-design` · `database-patterns` · `performance-optimization` · `accessibility` · `internationalization` · `deployment` · `dependency-management` · `monitoring-observability` · `ai-integration` · `authentication-patterns` · `data-migrations-resilience` · `state-machines-workflows` · `docker-containerization` · `skill-authoring`
 
 ## Skill format
 
