@@ -15,9 +15,9 @@ author: "@nexus-framework/skills"
 status: active
 updated: 2026-10-03
 related:
-  - api-design
-  - database-patterns
-  - debugging
+  - "api-design"
+  - "database-patterns"
+  - "debugging"
 ---
 
 # Skill: State Machines & Durable Workflows (Shared)

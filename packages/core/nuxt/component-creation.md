@@ -4,10 +4,10 @@ version: 1.0.1
 framework: nuxt
 category: ui
 triggers:
-- component creation
-- Vue components
-- Nuxt components
-- component architecture
+  - "component creation"
+  - "Vue components"
+  - "Nuxt components"
+  - "component architecture"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

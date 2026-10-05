@@ -4,11 +4,11 @@ version: 1.0.1
 framework: react-vite
 category: workflow
 triggers:
-- internationalization
-- i18n
-- localization
-- l10n
-- multi-language
+  - "internationalization"
+  - "i18n"
+  - "localization"
+  - "l10n"
+  - "multi-language"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

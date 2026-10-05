@@ -15,9 +15,9 @@ author: "@nexus-framework/skills"
 status: active
 updated: 2026-10-03
 related:
-  - api-design
-  - security-best-practices
-  - performance-optimization
+  - "api-design"
+  - "security-best-practices"
+  - "performance-optimization"
 ---
 
 # Skill: AI & LLM Integration (Shared)

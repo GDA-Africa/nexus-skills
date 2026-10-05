@@ -4,11 +4,11 @@ version: 1.0.1
 framework: shared
 category: workflow
 triggers:
-- documentation
-- writing docs
-- API documentation
-- code comments
-- README
+  - "documentation"
+  - "writing docs"
+  - "API documentation"
+  - "code comments"
+  - "README"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

@@ -15,9 +15,9 @@ author: "@nexus-framework/skills"
 status: active
 updated: 2026-10-03
 related:
-  - database-patterns
-  - performance-optimization
-  - monitoring-observability
+  - "database-patterns"
+  - "performance-optimization"
+  - "monitoring-observability"
 ---
 
 # Skill: Data Migrations & Database Resilience (Shared)

@@ -4,11 +4,11 @@ version: 1.0.1
 framework: next.js
 category: ui
 triggers:
-- creating a new component
-- adding a React component
-- building a UI element
-- new component
-- add a page component
+  - "creating a new component"
+  - "adding a React component"
+  - "building a UI element"
+  - "new component"
+  - "add a page component"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

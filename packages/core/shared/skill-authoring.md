@@ -4,23 +4,23 @@ version: 1.0.1
 framework: shared
 category: procedure
 triggers:
-- add a new skill
-- create a skill
-- write a skill
-- new skill file
-- skill authoring
-- skill creation
-- add skill to nexus
-- contribute a skill
-- write a nexus skill
-- skill for
+  - "add a new skill"
+  - "create a skill"
+  - "write a skill"
+  - "new skill file"
+  - "skill authoring"
+  - "skill creation"
+  - "add skill to nexus"
+  - "contribute a skill"
+  - "write a nexus skill"
+  - "skill for"
 author: '@nexus-framework/skills'
 status: active
 updated: 2026-03-07
 related:
-- knowledge-logging
-- documentation
-- code-review
+  - "knowledge-logging"
+  - "documentation"
+  - "code-review"
 invocation: model
 ---
 

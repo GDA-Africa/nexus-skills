@@ -4,11 +4,11 @@ version: 1.0.1
 framework: react-vite
 category: workflow
 triggers:
-- testing
-- unit testing
-- integration testing
-- e2e testing
-- test strategy
+  - "testing"
+  - "unit testing"
+  - "integration testing"
+  - "e2e testing"
+  - "test strategy"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

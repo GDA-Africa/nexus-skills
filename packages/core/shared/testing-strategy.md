@@ -4,11 +4,11 @@ version: 1.0.1
 framework: shared
 category: testing
 triggers:
-- testing strategy
-- testing pyramid
-- unit tests
-- integration tests
-- E2E tests
+  - "testing strategy"
+  - "testing pyramid"
+  - "unit tests"
+  - "integration tests"
+  - "E2E tests"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

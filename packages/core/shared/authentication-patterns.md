@@ -15,9 +15,9 @@ author: "@nexus-framework/skills"
 status: active
 updated: 2026-10-03
 related:
-  - security-best-practices
-  - api-design
-  - database-patterns
+  - "security-best-practices"
+  - "api-design"
+  - "database-patterns"
 ---
 
 # Skill: Authentication & Authorization Patterns (Shared)

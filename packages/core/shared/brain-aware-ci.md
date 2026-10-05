@@ -4,12 +4,12 @@ version: 1.0.1
 framework: shared
 category: workflow
 triggers:
-- ci
-- continuous integration
-- github actions
-- pull request
-- pr comment
-- doctor gate
+  - "ci"
+  - "continuous integration"
+  - "github actions"
+  - "pull request"
+  - "pr comment"
+  - "doctor gate"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

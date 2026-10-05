@@ -4,11 +4,11 @@ agent: nexus-doc-keeper
 version: 1.0.1
 role: hygiene
 triggers:
-- update docs
-- progress log
-- knowledge entry
-- session end
-- brain hygiene
+  - "update docs"
+  - "progress log"
+  - "knowledge entry"
+  - "session end"
+  - "brain hygiene"
 tools:
   read:
   - nexus_wake

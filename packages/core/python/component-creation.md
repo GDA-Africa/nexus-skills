@@ -4,10 +4,10 @@ version: 1.0.1
 framework: python
 category: ui
 triggers:
-- component creation
-- Python components
-- Python patterns
-- component architecture
+  - "component creation"
+  - "Python components"
+  - "Python patterns"
+  - "component architecture"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

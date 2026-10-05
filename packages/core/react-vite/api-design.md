@@ -4,11 +4,11 @@ version: 1.0.1
 framework: react-vite
 category: api
 triggers:
-- API design
-- REST API
-- GraphQL
-- API conventions
-- API documentation
+  - "API design"
+  - "REST API"
+  - "GraphQL"
+  - "API conventions"
+  - "API documentation"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

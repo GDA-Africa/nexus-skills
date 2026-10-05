@@ -4,11 +4,11 @@ version: 1.0.1
 framework: shared
 category: workflow
 triggers:
-- security best practices
-- security guidelines
-- input validation
-- authentication
-- security vulnerabilities
+  - "security best practices"
+  - "security guidelines"
+  - "input validation"
+  - "authentication"
+  - "security vulnerabilities"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

@@ -4,11 +4,11 @@ version: 1.0.1
 framework: shared
 category: workflow
 triggers:
-- create agent
-- custom agent
-- agent definition
-- nexus agent new
-- subagent
+  - "create agent"
+  - "custom agent"
+  - "agent definition"
+  - "nexus agent new"
+  - "subagent"
 author: '@nexus-framework/skills'
 status: active
 invocation: user

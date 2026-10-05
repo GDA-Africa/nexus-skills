@@ -4,11 +4,11 @@ version: 1.0.1
 framework: next.js
 category: api
 triggers:
-- middleware
-- app middleware
-- route middleware
-- request handling
-- authentication middleware
+  - "middleware"
+  - "app middleware"
+  - "route middleware"
+  - "request handling"
+  - "authentication middleware"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

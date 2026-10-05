@@ -2,22 +2,16 @@
 skill: code-review
 version: 1.0.1
 framework: shared
-category: procedure
+category: workflow
 triggers:
-- code review
-- reviewing code
-- pull request review
-- review feedback
-- review comments
+  - "code review"
+  - "reviewing code"
+  - "pull request review"
+  - "review feedback"
+  - "review comments"
 author: '@nexus-framework/skills'
 status: active
 invocation: model
-gate:
-  plan_types:
-  - feature
-  - bug
-  - refactor
-  record: '## Review Notes'
 ---
 
 # Skill: Code Review (Shared)

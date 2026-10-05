@@ -4,10 +4,10 @@ version: 1.0.1
 framework: react-vite
 category: api
 triggers:
-- API routes
-- server endpoints
-- API development
-- REST endpoints
+  - "API routes"
+  - "server endpoints"
+  - "API development"
+  - "REST endpoints"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

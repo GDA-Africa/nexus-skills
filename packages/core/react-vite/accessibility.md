@@ -4,11 +4,11 @@ version: 1.0.1
 framework: react-vite
 category: ui
 triggers:
-- accessibility
-- a11y
-- WCAG
-- screen reader
-- keyboard navigation
+  - "accessibility"
+  - "a11y"
+  - "WCAG"
+  - "screen reader"
+  - "keyboard navigation"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

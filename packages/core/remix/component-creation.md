@@ -4,10 +4,10 @@ version: 1.0.1
 framework: remix
 category: ui
 triggers:
-- component creation
-- Remix components
-- Remix patterns
-- component architecture
+  - "component creation"
+  - "Remix components"
+  - "Remix patterns"
+  - "component architecture"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

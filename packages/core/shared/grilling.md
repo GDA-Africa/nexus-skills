@@ -23,9 +23,9 @@ author: "@nexus-framework/skills"
 status: active
 updated: 2026-10-05
 related:
-  - nexus-plans-workflow
-  - knowledge-logging
-  - state-machines-workflows
+  - "nexus-plans-workflow"
+  - "knowledge-logging"
+  - "state-machines-workflows"
 ---
 
 # Skill: Grilling & Alignment Interview (Shared)

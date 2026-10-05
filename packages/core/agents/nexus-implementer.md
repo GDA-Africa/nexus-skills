@@ -4,12 +4,12 @@ agent: nexus-implementer
 version: 1.0.1
 role: build
 triggers:
-- implement
-- build
-- add feature
-- fix bug
-- refactor
-- next step
+  - "implement"
+  - "build"
+  - "add feature"
+  - "fix bug"
+  - "refactor"
+  - "next step"
 tools:
   read:
   - nexus_wake

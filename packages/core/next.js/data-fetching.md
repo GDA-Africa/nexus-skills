@@ -4,11 +4,11 @@ version: 1.0.1
 framework: next.js
 category: data
 triggers:
-- fetching data
-- data fetching
-- API calls
-- server-side data
-- client-side data
+  - "fetching data"
+  - "data fetching"
+  - "API calls"
+  - "server-side data"
+  - "client-side data"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

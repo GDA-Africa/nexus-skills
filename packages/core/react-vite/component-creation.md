@@ -4,10 +4,10 @@ version: 1.0.1
 framework: react-vite
 category: ui
 triggers:
-- component creation
-- React components
-- component patterns
-- component architecture
+  - "component creation"
+  - "React components"
+  - "component patterns"
+  - "component architecture"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

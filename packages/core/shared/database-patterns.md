@@ -4,11 +4,11 @@ version: 1.0.1
 framework: shared
 category: data
 triggers:
-- database patterns
-- database design
-- migrations
-- query optimization
-- database modeling
+  - "database patterns"
+  - "database design"
+  - "migrations"
+  - "query optimization"
+  - "database modeling"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

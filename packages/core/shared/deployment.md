@@ -4,11 +4,11 @@ version: 1.0.1
 framework: shared
 category: workflow
 triggers:
-- deployment
-- CI/CD
-- environment management
-- deployment strategies
-- production deployment
+  - "deployment"
+  - "CI/CD"
+  - "environment management"
+  - "deployment strategies"
+  - "production deployment"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

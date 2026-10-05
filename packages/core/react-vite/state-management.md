@@ -4,11 +4,11 @@ version: 1.0.1
 framework: react-vite
 category: workflow
 triggers:
-- state management
-- global state
-- zustand
-- redux
-- context
+  - "state management"
+  - "global state"
+  - "zustand"
+  - "redux"
+  - "context"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

@@ -4,11 +4,11 @@ version: 1.0.1
 framework: shared
 category: workflow
 triggers:
-- monitoring
-- observability
-- logging
-- metrics
-- alerting
+  - "monitoring"
+  - "observability"
+  - "logging"
+  - "metrics"
+  - "alerting"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

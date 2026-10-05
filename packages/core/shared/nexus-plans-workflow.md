@@ -4,12 +4,12 @@ version: 1.0.1
 framework: shared
 category: procedure
 triggers:
-- plan
-- multi-step
-- task tracking
-- nexus plan
-- roadmap
-- milestone
+  - "plan"
+  - "multi-step"
+  - "task tracking"
+  - "nexus plan"
+  - "roadmap"
+  - "milestone"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

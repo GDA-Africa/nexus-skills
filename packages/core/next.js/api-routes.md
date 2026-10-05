@@ -4,11 +4,11 @@ version: 1.0.1
 framework: next.js
 category: api
 triggers:
-- creating an API route
-- adding an endpoint
-- new API endpoint
-- server action
-- backend route
+  - "creating an API route"
+  - "adding an endpoint"
+  - "new API endpoint"
+  - "server action"
+  - "backend route"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

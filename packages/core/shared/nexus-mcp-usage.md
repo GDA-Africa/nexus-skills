@@ -4,12 +4,12 @@ version: 1.0.1
 framework: shared
 category: procedure
 triggers:
-- mcp
-- nexus mcp
-- brain tools
-- session start
-- wake
-- handshake
+  - "mcp"
+  - "nexus mcp"
+  - "brain tools"
+  - "session start"
+  - "wake"
+  - "handshake"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

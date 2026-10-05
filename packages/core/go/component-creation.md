@@ -4,10 +4,10 @@ version: 1.0.1
 framework: go
 category: ui
 triggers:
-- component creation
-- Go components
-- Go patterns
-- component architecture
+  - "component creation"
+  - "Go components"
+  - "Go patterns"
+  - "component architecture"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

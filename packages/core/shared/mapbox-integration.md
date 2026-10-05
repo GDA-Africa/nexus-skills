@@ -4,21 +4,21 @@ version: 1.0.1
 framework: shared
 category: integration
 triggers:
-- mapbox
-- map integration
-- mapbox GL
-- mapbox-gl-js
-- interactive map
-- map tiles
-- geospatial
-- location features
-- offline map
-- custom map style
-- map markers
-- map clustering
-- geocoding
-- route navigation
-- satellite imagery
+  - "mapbox"
+  - "map integration"
+  - "mapbox GL"
+  - "mapbox-gl-js"
+  - "interactive map"
+  - "map tiles"
+  - "geospatial"
+  - "location features"
+  - "offline map"
+  - "custom map style"
+  - "map markers"
+  - "map clustering"
+  - "geocoding"
+  - "route navigation"
+  - "satellite imagery"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

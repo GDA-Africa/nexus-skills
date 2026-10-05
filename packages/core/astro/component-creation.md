@@ -4,10 +4,10 @@ version: 1.0.1
 framework: astro
 category: ui
 triggers:
-- component creation
-- Astro components
-- Astro patterns
-- component architecture
+  - "component creation"
+  - "Astro components"
+  - "Astro patterns"
+  - "component architecture"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

@@ -4,11 +4,11 @@ version: 1.0.1
 framework: react-vite
 category: workflow
 triggers:
-- data fetching
-- API calls
-- HTTP requests
-- data loading
-- caching
+  - "data fetching"
+  - "API calls"
+  - "HTTP requests"
+  - "data loading"
+  - "caching"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

@@ -15,9 +15,9 @@ author: "@nexus-framework/skills"
 status: active
 updated: 2026-10-03
 related:
-  - deployment
-  - security-best-practices
-  - performance-optimization
+  - "deployment"
+  - "security-best-practices"
+  - "performance-optimization"
 ---
 
 # Skill: Docker Containerization & Security (Shared)

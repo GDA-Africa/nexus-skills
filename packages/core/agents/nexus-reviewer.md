@@ -4,11 +4,11 @@ agent: nexus-reviewer
 version: 1.0.1
 role: review
 triggers:
-- review
-- check this
-- pr
-- pull request
-- before merge
+  - "review"
+  - "check this"
+  - "pr"
+  - "pull request"
+  - "before merge"
 tools:
   read:
   - nexus_wake

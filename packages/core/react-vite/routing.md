@@ -4,11 +4,11 @@ version: 1.0.1
 framework: react-vite
 category: workflow
 triggers:
-- routing
-- React Router
-- navigation
-- URL parameters
-- route guards
+  - "routing"
+  - "React Router"
+  - "navigation"
+  - "URL parameters"
+  - "route guards"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

@@ -4,10 +4,10 @@ version: 1.0.1
 framework: rust
 category: ui
 triggers:
-- component creation
-- Rust components
-- Rust patterns
-- component architecture
+  - "component creation"
+  - "Rust components"
+  - "Rust patterns"
+  - "component architecture"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

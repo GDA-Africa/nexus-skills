@@ -4,11 +4,11 @@ version: 1.0.1
 framework: next.js
 category: routing
 triggers:
-- adding a route
-- creating a new page
-- adding navigation
-- new page
-- URL handler
+  - "adding a route"
+  - "creating a new page"
+  - "adding navigation"
+  - "new page"
+  - "URL handler"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

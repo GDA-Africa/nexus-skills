@@ -4,11 +4,11 @@ agent: nexus-test-writer
 version: 1.0.1
 role: verification
 triggers:
-- write tests
-- test this
-- coverage
-- verify
-- step complete
+  - "write tests"
+  - "test this"
+  - "coverage"
+  - "verify"
+  - "step complete"
 tools:
   read:
   - nexus_wake

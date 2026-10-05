@@ -4,11 +4,11 @@ version: 1.0.1
 framework: shared
 category: workflow
 triggers:
-- git workflow
-- git commit
-- pull request
-- branching strategy
-- code review
+  - "git workflow"
+  - "git commit"
+  - "pull request"
+  - "branching strategy"
+  - "code review"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

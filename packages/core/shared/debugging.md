@@ -4,11 +4,11 @@ version: 1.0.1
 framework: shared
 category: workflow
 triggers:
-- debugging
-- debug issue
-- troubleshooting
-- bug fix
-- error investigation
+  - "debugging"
+  - "debug issue"
+  - "troubleshooting"
+  - "bug fix"
+  - "error investigation"
 author: '@nexus-framework/skills'
 status: active
 invocation: model

@@ -4,11 +4,11 @@ version: 1.0.1
 framework: shared
 category: workflow
 triggers:
-- dependency management
-- package management
-- versioning
-- security scanning
-- npm packages
+  - "dependency management"
+  - "package management"
+  - "versioning"
+  - "security scanning"
+  - "npm packages"
 author: '@nexus-framework/skills'
 status: active
 invocation: model
