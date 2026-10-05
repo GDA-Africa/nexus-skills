@@ -39,7 +39,7 @@ sveltekit/ nuxt/ astro/ remix/   starter sets (parity expansion in progress)
 go/ python/ rust/                production sets (API design, testing, components)
 ```
 
-### New in v0.4.0 — Production Architecture & Backend Packs
+### New in v0.5.0 — Production Architecture & Backend Packs
 
 | Skill | Teaches agents to |
 |-------|-------------------|
