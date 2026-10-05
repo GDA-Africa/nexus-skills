@@ -1,15 +1,16 @@
 ---
 skill: component-creation
-version: 1.0.0
+version: 1.0.1
 framework: astro
 category: ui
 triggers:
-  - "component creation"
-  - "Astro components"
-  - "Astro patterns"
-  - "component architecture"
-author: "@nexus-framework/skills"
+- component creation
+- Astro components
+- Astro patterns
+- component architecture
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: Component Creation (Astro)

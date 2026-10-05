@@ -1,21 +1,43 @@
 ---
 nexus_agent: true
 agent: nexus-reviewer
-version: 1.0.0
+version: 1.0.1
 role: review
-triggers: ["review", "check this", "pr", "pull request", "before merge"]
+triggers:
+- review
+- check this
+- pr
+- pull request
+- before merge
 tools:
-  read: [nexus_wake, nexus_query_knowledge, nexus_get_vital_signs, nexus_doctor, nexus_brief, nexus_get_active_plan]
+  read:
+  - nexus_wake
+  - nexus_query_knowledge
+  - nexus_get_vital_signs
+  - nexus_doctor
+  - nexus_brief
+  - nexus_get_active_plan
   write: []
-  exec: [Read, Grep, Glob, Bash]
+  exec:
+  - Read
+  - Grep
+  - Glob
+  - Bash
 context:
-  docs: [02_architecture.md]
-  knowledge_categories: [convention, gotcha, architecture, bug-fix]
-  skills: ["code-review"]
+  docs:
+  - 02_architecture.md
+  knowledge_categories:
+  - convention
+  - gotcha
+  - architecture
+  - bug-fix
+  skills:
+  - code-review
   plan_scope: active
 handoff:
   after: nexus-test-writer
 status: active
+invocation: model
 ---
 
 # Agent: nexus-reviewer

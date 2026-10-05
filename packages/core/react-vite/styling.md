@@ -1,16 +1,17 @@
 ---
 skill: styling
-version: 1.0.0
+version: 1.0.1
 framework: react-vite
 category: ui
 triggers:
-  - "styling"
-  - "CSS"
-  - "SCSS"
-  - "styled-components"
-  - "CSS-in-JS"
-author: "@nexus-framework/skills"
+- styling
+- CSS
+- SCSS
+- styled-components
+- CSS-in-JS
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: Styling (React + Vite)

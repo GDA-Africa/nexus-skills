@@ -1,16 +1,17 @@
 ---
 skill: data-fetching
-version: 1.0.0
+version: 1.0.1
 framework: react-vite
 category: workflow
 triggers:
-  - "data fetching"
-  - "API calls"
-  - "HTTP requests"
-  - "data loading"
-  - "caching"
-author: "@nexus-framework/skills"
+- data fetching
+- API calls
+- HTTP requests
+- data loading
+- caching
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: Data Fetching (React + Vite)

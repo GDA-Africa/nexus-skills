@@ -1,16 +1,17 @@
 ---
 skill: data-fetching
-version: 1.0.0
+version: 1.0.1
 framework: next.js
 category: data
 triggers:
-  - "fetching data"
-  - "data fetching"
-  - "API calls"
-  - "server-side data"
-  - "client-side data"
-author: "@nexus-framework/skills"
+- fetching data
+- data fetching
+- API calls
+- server-side data
+- client-side data
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: Data Fetching (Next.js)
@@ -19,7 +20,7 @@ status: active
 Read this skill before implementing data fetching in any component or route in this project.
 
 ## Context
-This project uses Next.js App Router with server components by default. Data fetching should prioritize server-side fetching for SEO and performance. Use `fetch()` with proper caching strategies, and consider using TanStack Query (React Query) for client-side state management when needed. Always implement proper error handling and loading states.
+We leverage Next.js App Router data fetching capabilities, relying predominantly on React Server Components (RSC) to fetch data directly on the server. We use standard `fetch` with `cache` and `next.revalidate` options for caching, and React `cache()` for deduping requests in server components.
 
 ## Steps
 1. Determine if data should be fetched on the server or client.
@@ -31,13 +32,10 @@ This project uses Next.js App Router with server components by default. Data fet
 7. Consider data validation using Zod schemas.
 
 ## Patterns We Use
-- Server components: Direct `fetch()` calls with caching options
-- Client components: TanStack Query with query keys and stale time
-- Caching: Use `revalidate` and `tags` for ISR (Incremental Static Regeneration)
-- Error handling: Custom error boundaries and error states
-- Loading states: Suspense boundaries and skeleton loaders
-- Data validation: Zod schemas for API response validation
-- Query keys: Descriptive arrays for cache invalidation
+- Server Components for Data: Fetch data directly in server components (`async`/`await`).
+- Data Caching: Use `fetch(url, { next: { revalidate: 3600 } })` for ISR/SSG-like behavior.
+- Suspense: Wrap data-fetching components in `<Suspense fallback={<Loading />}>` to stream UI to the client.
+- Deduping: Use React `cache()` for requests spanning multiple components to avoid duplicate queries.
 
 ## Anti-Patterns — Never Do This
 - ❌ Do not use `useEffect` for data fetching in server components

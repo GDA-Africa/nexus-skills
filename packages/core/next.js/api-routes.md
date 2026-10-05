@@ -1,16 +1,17 @@
 ---
 skill: api-routes
-version: 1.0.0
+version: 1.0.1
 framework: next.js
 category: api
 triggers:
-  - "creating an API route"
-  - "adding an endpoint"
-  - "new API endpoint"
-  - "server action"
-  - "backend route"
-author: "@nexus-framework/skills"
+- creating an API route
+- adding an endpoint
+- new API endpoint
+- server action
+- backend route
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: API Routes (Next.js)

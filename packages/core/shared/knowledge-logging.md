@@ -1,16 +1,17 @@
 ---
 skill: knowledge-logging
-version: 1.0.0
+version: 1.0.1
 framework: shared
 category: workflow
 triggers:
-  - "knowledge logging"
-  - "knowledge.md"
-  - "project knowledge"
-  - "decision log"
-  - "lessons learned"
-author: "@nexus-framework/skills"
+- knowledge logging
+- knowledge.md
+- project knowledge
+- decision log
+- lessons learned
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: Knowledge Logging (Shared)

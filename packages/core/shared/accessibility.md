@@ -1,16 +1,17 @@
 ---
 skill: accessibility
-version: 1.0.0
+version: 1.0.1
 framework: shared
 category: ui
 triggers:
-  - "accessibility"
-  - "a11y"
-  - "WCAG"
-  - "screen reader"
-  - "keyboard navigation"
-author: "@nexus-framework/skills"
+- accessibility
+- a11y
+- WCAG
+- screen reader
+- keyboard navigation
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: Accessibility (Shared)

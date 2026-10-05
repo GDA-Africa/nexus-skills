@@ -1,17 +1,18 @@
 ---
 skill: nexus-mcp-usage
-version: 1.0.0
+version: 1.0.1
 framework: shared
-category: workflow
+category: procedure
 triggers:
-  - "mcp"
-  - "nexus mcp"
-  - "brain tools"
-  - "session start"
-  - "wake"
-  - "handshake"
-author: "@nexus-framework/skills"
+- mcp
+- nexus mcp
+- brain tools
+- session start
+- wake
+- handshake
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: NEXUS Brain MCP Usage (Shared)
@@ -41,6 +42,11 @@ NEXUS v1.0 ships an MCP server (`nexus mcp`) that exposes the project brain as s
 - ❌ Do not hand-edit plan checklists or frontmatter when `nexus_plan_tick` / `nexus_plan_note` are available
 - ❌ Do not paste entire knowledge.md into context when a targeted query answers the question
 - ❌ Do not write to the brain via shell redirection (`echo >> knowledge.md`) — entries must stay parseable
+
+## Completion Criteria
+Done when the procedure has been fully executed and its output generated.
+
+Not done when steps are skipped or outputs are partial.
 
 ## Example
 

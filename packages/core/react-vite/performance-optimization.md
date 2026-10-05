@@ -1,16 +1,17 @@
 ---
 skill: performance-optimization
-version: 1.0.0
+version: 1.0.1
 framework: react-vite
 category: workflow
 triggers:
-  - "performance optimization"
-  - "React performance"
-  - "render optimization"
-  - "bundle optimization"
-  - "Vite optimization"
-author: "@nexus-framework/skills"
+- performance optimization
+- React performance
+- render optimization
+- bundle optimization
+- Vite optimization
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: Performance Optimization (React + Vite)

@@ -1,16 +1,17 @@
 ---
 skill: state-management
-version: 1.0.0
+version: 1.0.1
 framework: react-vite
 category: workflow
 triggers:
-  - "state management"
-  - "global state"
-  - "zustand"
-  - "redux"
-  - "context"
-author: "@nexus-framework/skills"
+- state management
+- global state
+- zustand
+- redux
+- context
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: State Management (React + Vite)
@@ -19,7 +20,7 @@ status: active
 Read this skill when implementing state management for application data, user preferences, or complex state logic in a React + Vite application.
 
 ## Context
-This project uses Zustand for global state management due to its simplicity, performance, and TypeScript support. We follow a structured approach with separate stores for different concerns, proper TypeScript typing, and middleware for persistence and logging. Local component state is still managed with useState and useReducer for component-specific data.
+This project uses Zustand for global state management and React Query (TanStack Query) for server state caching and synchronization. We strictly avoid over-using React Context or Redux unless absolutely necessary. Local UI state is handled via standard React `useState` and `useReducer`.
 
 ## Steps
 1. Choose appropriate state management approach (local vs global)
@@ -32,14 +33,10 @@ This project uses Zustand for global state management due to its simplicity, per
 8. Test state management thoroughly
 
 ## Patterns We Use
-- Zustand stores: Use for global state that needs to be shared across components
-- Local state: Use useState/useReducer for component-specific state
-- TypeScript interfaces: Define clear types for state structure
-- Selectors: Use memoized selectors to optimize performance
-- Actions: Use action creators for state mutations
-- Persistence: Use persist middleware for critical user data
-- Immer: Use for complex nested state updates
-- Dev tools: Enable Redux DevTools in development
+- Server State: Use TanStack Query (`useQuery`, `useMutation`) for all external data fetching and caching.
+- Global Client State: Use Zustand. Create small, focused stores (e.g., `useUIStore`, `useAuthStore`).
+- Local State: Use `useState` for simple component state and `useReducer` for complex state logic.
+- Selectors: Always use selectors with Zustand stores to prevent unnecessary re-renders (`const bear = useStore(state => state.bears)`).
 
 ## Anti-Patterns — Never Do This
 - ❌ Do not put all state in global stores - keep component state local

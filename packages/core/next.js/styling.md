@@ -1,16 +1,17 @@
 ---
 skill: styling
-version: 1.0.0
+version: 1.0.1
 framework: next.js
 category: ui
 triggers:
-  - "styling component"
-  - "adding styles"
-  - "CSS"
-  - "Tailwind"
-  - "component styling"
-author: "@nexus-framework/skills"
+- styling component
+- adding styles
+- CSS
+- Tailwind
+- component styling
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: Styling (Next.js)

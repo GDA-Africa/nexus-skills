@@ -1,16 +1,17 @@
 ---
 skill: error-handling
-version: 1.0.0
+version: 1.0.1
 framework: next.js
 category: workflow
 triggers:
-  - "error handling"
-  - "error boundary"
-  - "error management"
-  - "handling errors"
-  - "error states"
-author: "@nexus-framework/skills"
+- error handling
+- error boundary
+- error management
+- handling errors
+- error states
+author: '@nexus-framework/skills'
 status: active
+invocation: model
 ---
 
 # Skill: Error Handling (Next.js)
